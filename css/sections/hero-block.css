@@ -1,0 +1,124 @@
+.hero-block {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  font-family: 'Helvetica', sans-serif;
+}
+
+.hero-news__main {
+  box-sizing: border-box;
+  width: 60%;
+  background: url("../../img/hero-block/hero-landscape.png") no-repeat center;
+  background-size: cover;
+  padding: 177px 140px;
+  color: white;
+}
+
+.section-top__title {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.section-top__title--white-underlined::after {
+  content: '';
+  display: block;
+  height: 0;
+  border-top: 2px solid white;
+  margin: 28px 0;
+}
+.hero-news__title--gray-underlined::after {
+  content: '';
+  width: 100%;
+  display: block;
+  height: 0;
+  border-top: 2px solid var(--line-gray);
+  margin: 28px 0;
+}
+
+.section-top__main-text {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.5;
+  margin: 5px 0 20px;
+}
+
+.hero-news__link {
+  display: inline-block;
+  font-size: 11px;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: var(--primary-pink);
+  color: white;
+}
+
+.hero-news__more {
+  box-sizing: border-box;
+  width: 40%;
+  padding: 100px 120px 100px 100px;
+}
+
+.section-top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section-top__arrow:first-child {
+  margin-right: 30px;
+}
+
+.hero-news__list {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hero-news__item {
+  margin-bottom: 30px;
+}
+
+.hero-news__category {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--primary-pink);
+  margin-bottom: 15px;
+}
+
+.article__title {
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--bold-black);
+  margin-bottom: 10px;
+}
+
+.article__text {
+  font-family: 'Acumin Pro', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.75;
+  color: var(--text-grey);
+  margin-bottom: 7px;
+}
+
+.article__timing {
+  display: flex;
+  align-items: center;
+}
+
+.article__time {
+  width: 15px;
+  height: 15px;
+  margin-right: 7px;
+}
+
+.article__time-text {
+  font-size: 11px;
+  color: var(--text-grey);
+}
+
+.article__time-text--white {
+  color: var(--line-gray);
+}

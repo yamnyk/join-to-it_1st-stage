@@ -1,0 +1,26 @@
+.gray-block {
+  font-family: 'Helvetica', sans-serif;
+  padding: 40px 120px 0;
+  background: var(--bg-gray);
+}
+
+.trending__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.trending__item {
+  width: calc(100% / 3 - 20px);
+  border-radius: 4px;
+  background: white;
+}
+
+.trending__img {
+  width: 100%;
+}
+
+.article-zone {
+  padding: 30px;
+}

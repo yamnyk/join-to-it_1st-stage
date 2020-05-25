@@ -1,0 +1,56 @@
+.actual {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  margin-top: 30px;
+  padding-bottom: 100px;
+}
+
+.actual__promo-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 4px;
+}
+
+.actual__promo-item--white {
+  color: white;
+}
+
+.actual__bridge-bg {
+  background: url("../../img/actual/acrual-bridge.png") no-repeat center top;
+  background-size: cover;
+  grid-column: 1 / 4;
+  grid-row: 1 / 3;
+}
+.actual__landscape-bg {
+  background: url("../../img/actual/actual-lendscape.png") no-repeat center top;
+  background-size: cover;
+  grid-column: 1 / 4;
+  grid-row: 3 / 5;
+}
+
+.article-zone--white {
+  color: white;
+}
+
+.actual__category {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 30px 30px 0;
+}
+
+.actual__item {
+
+}
+
+.actual__item:nth-of-type(2n) {
+  grid-row: 2 / 4;
+}
+
+.actual__img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}

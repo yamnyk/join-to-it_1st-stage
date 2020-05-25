@@ -1,0 +1,93 @@
+.top-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #F6F8F9;
+  font-family: 'Helvetica', sans-serif;
+  z-index: 10;
+}
+
+.top-bar__company {
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--primary-pink);
+}
+
+.top-bar__company--white {
+  color: white;
+}
+
+.top-bar__nav-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.top-bar__menu {
+  margin-right: 30px;
+}
+
+.top-bar__menu-item {
+  display: inline-block;
+  margin-right: 22px;
+  opacity: 0.5;
+  transition: 0.4s opacity;
+}
+
+.top-bar__menu-link {
+  font-weight: 700;
+  font-size: 11px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--text-grey);
+}
+
+.top-bar__menu-item:hover {
+  opacity: 1;
+}
+
+.top-bar__inner-menu {
+  visibility: hidden;
+  position: absolute;
+  top: 100%;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(0px);
+  padding: 15px;
+  background: var(--bg-gray);
+  transition: 0.3s transform, 0.3s visibility;
+}
+
+.top-bar__menu-item:hover > .top-bar__inner-menu {
+  visibility: visible;
+  transform: translateX(-15px);
+}
+
+.top-bar__item--horizontal {
+  margin-bottom: 15px;
+}
+
+.top-bar__item--horizontal:last-child {
+  margin-bottom: 0;
+}
+
+.top-bar__avatar-wrap {
+  width: 25px;
+  height: 25px;
+}
+.top-bar__avatar {
+  width: 100%;
+}
+
+
+.mobile-head {
+  display: none;
+  opacity: 0;
+
+  padding: 30px 0;
+  background-color: teal;
+}
