@@ -175,7 +175,8 @@
 
 .mobile-head__company {
   display: inline-block;
-  padding: 40px;
+  align-self: flex-start;
+  margin: 40px;
 }
 
 .mobile-head__menu {
@@ -234,7 +235,7 @@
 
 .mobile-head__nav-item {
   width: 50%;
-  margin: 10px 0;
+  margin: 5% 0;
 }
 
 .mobile-head__nav-link {
