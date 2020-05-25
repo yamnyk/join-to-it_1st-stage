@@ -10,6 +10,7 @@
 }
 
 .top-bar__company {
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 13px;
   font-weight: 700;
   text-decoration: none;
@@ -19,6 +20,10 @@
 
 .top-bar__company--white {
   color: white;
+}
+
+.top-bar__company--gray {
+  color: var(--main-grey);
 }
 
 .top-bar__nav-wrap {
@@ -85,9 +90,56 @@
 
 
 .mobile-head {
+  position: relative;
   display: none;
   opacity: 0;
 
-  padding: 30px 0;
-  background-color: teal;
+
+  padding: 16px;
+  background-color: var(--bg-gray);
+}
+
+.mobile-head__menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mobile-head__checkbox {
+  display: none;
+  opacity: 0;
+  z-index: -1;
+}
+
+.mobile-nav__icon {
+  min-width: 15px;
+  min-height: 15px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.mobile-head__line {
+  box-sizing: border-box;
+  height: 0;
+  border-top: 2px solid var(--bold-black);
+  border-radius: 1px;
+  transition: 0.3s transform;
+  transform-origin: center;
+}
+
+.mobile-head__line--smaller {
+  width: 60%;
+}
+
+.mobile-head__checkbox:checked ~ .mobile-nav__icon > .mobile-head__line--smaller {
+  transform: translateX(-20px);
+}
+
+.mobile-head__checkbox:checked ~ .mobile-nav__icon > .mobile-head__line--top {
+  transform: translate(-2px, 7px) rotate(135deg);
+}
+
+.mobile-head__checkbox:checked ~ .mobile-nav__icon > .mobile-head__line--bottom {
+  transform: translate(-2px, -6px) rotate(-135deg);
 }

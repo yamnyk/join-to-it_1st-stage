@@ -43,7 +43,7 @@
 
 @media screen and (max-width: 576px) {
   .mobile-head {
-    display: flex;
+    display: block;
     opacity: 1;
   }
 

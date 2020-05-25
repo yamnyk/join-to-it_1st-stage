@@ -15,8 +15,8 @@
 }
 
 .section-top__title {
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 24px;
+  font-weight: 600;
 }
 
 .section-top__title--white-underlined::after {
@@ -36,8 +36,8 @@
 }
 
 .section-top__main-text {
-  font-weight: 400;
-  font-size: 13px;
+  font-weight: 300;
+  font-size: 16px;
   line-height: 1.5;
   margin: 5px 0 20px;
 }
@@ -81,26 +81,30 @@
 }
 
 .hero-news__category {
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 700;
   color: var(--primary-pink);
   margin-bottom: 15px;
 }
 
 .article__title {
-  font-weight: 700;
-  font-size: 13px;
+  font-weight: 600;
+  font-size: 16px;
   color: var(--bold-black);
   margin-bottom: 10px;
 }
 
 .article__text {
   font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 400;
-  font-size: 13px;
+  font-weight: 300;
+  font-size: 16px;
   line-height: 1.75;
-  color: var(--text-grey);
+  color: var(--main-grey);
   margin-bottom: 7px;
+}
+
+.article__text--smaller {
+  font-size: 13px;
 }
 
 .article__timing {
@@ -115,8 +119,13 @@
 }
 
 .article__time-text {
-  font-size: 11px;
-  color: var(--text-grey);
+  font-size: 13px;
+  font-weight: 300;
+  color: var(--main-grey);
+}
+
+.article__time-text--link {
+  color: var(--main-grey);
 }
 
 .article__time-text--white {
