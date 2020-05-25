@@ -41,10 +41,6 @@
   padding: 30px 30px 0;
 }
 
-.actual__item {
-
-}
-
 .actual__item:nth-of-type(2n) {
   grid-row: 2 / 4;
 }
