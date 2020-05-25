@@ -7,7 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>News Test Page</title>
   <link rel="stylesheet" href="css/reset.css">
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -47,15 +48,58 @@
 </header>
 
 <div class="mobile-head">
-  <nav class="mobile-head__menu">
-    <input type="checkbox" class="mobile-head__checkbox" id="navCheck">
-    <label for="navCheck" class="mobile-nav__icon">
-      <div class="mobile-head__line mobile-head__line--top"></div>
-      <div class="mobile-head__line mobile-head__line--smaller"></div>
-      <div class="mobile-head__line mobile-head__line--bottom"></div>
-    </label>
-    <a href="#" class="top-bar__company top-bar__company--gray"><h1>logo</h1></a>
-  </nav>
+  <input type="checkbox" class="mobile-head__checkbox" id="navCheck">
+  <label for="navCheck" class="mobile-nav__icon">
+    <div class="mobile-head__line mobile-head__line--top"></div>
+    <div class="mobile-head__line mobile-head__line--smaller"></div>
+    <div class="mobile-head__line mobile-head__line--bottom"></div>
+  </label>
+  <a href="#" class="top-bar__company top-bar__company--gray"><h1>logo</h1></a>
+  <a href="#" class="top-bar__avatar-mobile">
+    <img class="top-bar__avatar" src="img/person-avatar.png" alt="person avatar">
+  </a>
+  <div class="mobile-head__menu-wrap">
+    <nav class="mobile-head__menu">
+      <a href="#" class="top-bar__company mobile-head__company"><h1>logo</h1></a>
+      <ul class="mobile-head__menu-list">
+        <li class="mobile-head__menu-item">
+          <img src="img/icons/home--black.svg" alt="home black" class="mobile-head__menu-icon">
+          <a href="#" class="top-bar__menu-link">home</a>
+        </li>
+        <li class="mobile-head__menu-item">
+          <img src="img/icons/compas--black.svg" alt="compas black" class="mobile-head__menu-icon">
+          <a href="#" class="top-bar__menu-link">DISCOVERY</a>
+        </li>
+        <li class="mobile-head__menu-item">
+          <img src="img/icons/frame--black.svg" alt="frame black" class="mobile-head__menu-icon">
+          <a href="#" class="top-bar__menu-link">PHOTOS</a>
+        </li>
+        <li class="mobile-head__menu-item">
+          <img src="img/icons/email--black.svg" alt="email black" class="mobile-head__menu-icon">
+          <a href="#" class="top-bar__menu-link">CONTACT</a>
+        </li>
+      </ul>
+
+      <div class="mobile-head__menu-navigation">
+        <ul class="mobile-head__nav-list">
+          <li class="mobile-head__nav-item"><a class="mobile-head__nav-link" href="#">Home</a></li>
+          <li class="mobile-head__nav-item"><a class="mobile-head__nav-link" href="#">Testimonials</a></li>
+          <li class="mobile-head__nav-item"><a class="mobile-head__nav-link" href="#">Help</a></li>
+          <li class="mobile-head__nav-item"><a class="mobile-head__nav-link" href="#">Advertise</a></li>
+          <li class="mobile-head__nav-item"><a class="mobile-head__nav-link" href="#">Terms</a></li>
+          <li class="mobile-head__nav-item"><a class="mobile-head__nav-link" href="#">Integrations</a></li>
+          <li class="mobile-head__nav-item"><a class="mobile-head__nav-link" href="#">Guidelines</a></li>
+          <li class="mobile-head__nav-item"><a class="mobile-head__nav-link" href="#">Careers</a></li>
+        </ul>
+        <div class="mobile-head__social">
+          <img src="img/icons/insta.svg" alt="instagram">
+          <img src="img/icons/twitter.svg" alt="twitter">
+          <img src="img/icons/fb.svg" alt="facebook">
+          <img src="img/icons/web.svg" alt="web">
+        </div>
+      </div>
+    </nav>
+  </div>
 </div>
 
 <section class="hero-block">
@@ -72,8 +116,8 @@
     <div class="section-top hero-news__title--gray-underlined">
       <h2 class="section-top__title">MORE NEWS</h2>
       <div class="hero-news__arrows">
-        <img src="img/arrow-left.svg" alt="arrow-right" class="section-top__arrow">
-        <img src="img/arrow-right.svg" alt="arrow-right" class="section-top__arrow">
+        <img src="img/icons/arrow-left.svg" alt="arrow-right" class="section-top__arrow">
+        <img src="img/icons/arrow-right.svg" alt="arrow-right" class="section-top__arrow">
       </div>
     </div>
     <ul class="hero-news__list">
@@ -82,7 +126,7 @@
         <h4 class="article__title">Article title</h4>
         <p class="article__text">Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat…</p>
         <div class="article__timing">
-          <img class="article__time" src="img/clock.svg" alt="clock">
+          <img class="article__time" src="img/icons/clock.svg" alt="clock">
           <span class="article__time-text">2 min ago</span>
         </div>
       </li>
@@ -91,7 +135,7 @@
         <h4 class="article__title">Article title</h4>
         <p class="article__text">Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat…</p>
         <div class="article__timing">
-          <img class="article__time" src="img/clock.svg" alt="clock">
+          <img class="article__time" src="img/icons/clock.svg" alt="clock">
           <span class="article__time-text">2 min ago</span>
         </div>
       </li>
@@ -103,8 +147,8 @@
   <div class="section-top">
     <h2 class="section-top__title">TRENDING</h2>
     <div class="section-top__arrows">
-      <img src="img/arrow-left.svg" alt="arrow-right" class="section-top__arrow">
-      <img src="img/arrow-right.svg" alt="arrow-right" class="section-top__arrow">
+      <img src="img/icons/arrow-left.svg" alt="arrow-right" class="section-top__arrow">
+      <img src="img/icons/arrow-right.svg" alt="arrow-right" class="section-top__arrow">
     </div>
   </div>
   <div class="trending__list">
@@ -112,9 +156,10 @@
       <img src="img/trending/trending-lendscape.png" alt="landscape" class="trending__img">
       <article class="article-zone">
         <h4 class="article__title">Dolore magna aliqua</h4>
-        <p class="article__text article__text--smaller">Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat.</p>
+        <p class="article__text article__text--smaller">Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad
+          has appareat.</p>
         <div class="article__timing">
-          <img class="article__time" src="img/clock.svg" alt="clock">
+          <img class="article__time" src="img/icons/clock.svg" alt="clock">
           <span class="article__time-text">2m ago</span>
         </div>
       </article>
@@ -123,9 +168,10 @@
       <img src="img/trending/trending-umbrellas.png" alt="umbrellas" class="trending__img">
       <article class="article-zone">
         <h4 class="article__title">Dolore magna aliqua</h4>
-        <p class="article__text article__text--smaller">Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat.</p>
+        <p class="article__text article__text--smaller">Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad
+          has appareat.</p>
         <div class="article__timing">
-          <img class="article__time" src="img/clock.svg" alt="clock">
+          <img class="article__time" src="img/icons/clock.svg" alt="clock">
           <span class="article__time-text">1h ago</span>
         </div>
       </article>
@@ -134,9 +180,10 @@
       <img src="img/trending/trending-skiers.png" alt="umbrellas" class="trending__img">
       <article class="article-zone">
         <h4 class="article__title">Morbi eleifend a libero</h4>
-        <p class="article__text article__text--smaller">Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat.</p>
+        <p class="article__text article__text--smaller">Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad
+          has appareat.</p>
         <div class="article__timing">
-          <img class="article__time" src="img/clock.svg" alt="clock">
+          <img class="article__time" src="img/icons/clock.svg" alt="clock">
           <span class="article__time-text">3h ago</span>
         </div>
       </article>
@@ -147,8 +194,8 @@
   <div class="section-top">
     <h2 class="section-top__title">HAPPENING NOW</h2>
     <div class="section-top__arrows">
-      <img src="img/arrow-left.svg" alt="arrow-right" class="section-top__arrow">
-      <img src="img/arrow-right.svg" alt="arrow-right" class="section-top__arrow">
+      <img src="img/icons/arrow-left.svg" alt="arrow-right" class="section-top__arrow">
+      <img src="img/icons/arrow-right.svg" alt="arrow-right" class="section-top__arrow">
     </div>
   </div>
 
@@ -160,7 +207,7 @@
         <p class="section-top__main-text">Lorem ipsum dolor sit amet, in eam odio amet, vix id nullam detracto, vidit
           vituperatoribus duo id. Affert detraxit voluptatum vis eu, inermis eloquentiam.</p>
         <div class="article__timing">
-          <img class="article__time" src="img/clock_white.svg" alt="clock">
+          <img class="article__time" src="img/icons/clock_white.svg" alt="clock">
           <span class="article__time-text article__time-text--white">2h ago</span>
         </div>
       </article>
@@ -172,7 +219,7 @@
         <p class="section-top__main-text">Lorem ipsum dolor sit amet, in eam odio amet, vix id nullam detracto, vidit
           vituperatoribus duo id. Affert detraxit voluptatum vis eu, inermis eloquentiam.</p>
         <div class="article__timing">
-          <img class="article__time" src="img/clock_white.svg" alt="clock">
+          <img class="article__time" src="img/icons/clock_white.svg" alt="clock">
           <span class="article__time-text article__time-text--white">2h ago</span>
         </div>
       </article>
@@ -182,7 +229,7 @@
       <img src="img/actual/actual-elephant.png" alt="elephant" class="actual__img">
       <h4 class="article__title">Small title</h4>
       <div class="article__timing">
-        <img class="article__time" src="img/clock.svg" alt="clock">
+        <img class="article__time" src="img/icons/clock.svg" alt="clock">
         <span class="article__time-text">3h ago by <a href="#" class="article__time-text--link">Worldnews</a></span>
       </div>
     </div>
@@ -190,7 +237,7 @@
       <img src="img/actual/actual-parrot.png" alt="parrot" class="actual__img">
       <h4 class="article__title">Small title</h4>
       <div class="article__timing">
-        <img class="article__time" src="img/clock.svg" alt="clock">
+        <img class="article__time" src="img/icons/clock.svg" alt="clock">
         <span class="article__time-text">4h ago by <a href="#" class="article__time-text--link">Days</a></span>
       </div>
     </div>
@@ -198,7 +245,7 @@
       <img src="img/actual/actual-serpentine.png" alt="serpentine" class="actual__img">
       <h4 class="article__title">Small title</h4>
       <div class="article__timing">
-        <img class="article__time" src="img/clock.svg" alt="clock">
+        <img class="article__time" src="img/icons/clock.svg" alt="clock">
         <span class="article__time-text">3h ago by <a href="#" class="article__time-text--link">Monica</a></span>
       </div>
     </div>
@@ -230,18 +277,18 @@
         Stay in touch with us for the freshest products!
       </label>
       <button type="submit" class="bottom-nav__submit">
-        <img src="img/cursor.svg" alt="cursor">
+        <img src="img/icons/cursor.svg" alt="cursor">
       </button>
     </form>
 
     <div class="bottom-nav__social">
-      <img src="img/insta.svg" alt="instagram">
-      <img src="img/twitter.svg" alt="twitter">
-      <img src="img/fb.svg" alt="facebook">
-      <img src="img/web.svg" alt="web">
+      <img src="img/icons/insta.svg" alt="instagram">
+      <img src="img/icons/twitter.svg" alt="twitter">
+      <img src="img/icons/fb.svg" alt="facebook">
+      <img src="img/icons/web.svg" alt="web">
     </div>
   </div>
 </footer>
-<script> </script>
+<script></script>
 </body>
 </html>
